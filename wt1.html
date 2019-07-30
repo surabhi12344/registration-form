@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+.p{
+  color: white;
+  text-align: center;
+  background-color: green;
+  font-family: century gothic;
+  font-size:50px;
+  font-weight: 30px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.color{
+  background-color: yellow;
+}
+.button{
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+<script type="text/javascript">
+function registraion(){
+window.alert("you are going to registration form");
+
+}
+function login(){
+window.alert("you can be logged in by clicking ok");
+}
+function show(){
+var x = document.getElementById("txt");
+if (x.type === "password") {
+        x.type = "text";
+    } else {
+       x.type = "password";
+    }
+
+}
+</script>
+</head>
+<body class="color">
+<h1 class="p">SRKR CODERS</h1>
+<form name="log">
+<p style="padding: 50px 0px 0px 600px">
+<a href="file:///C:/Users/admin/Desktop/SIGN.HTML"><input class="button" type="button" value="sign up" onclick="registraion()"></a>
+<input class="button" type="button" value="sign in">
+</p>
+<div align="left" style="padding: 30px 0px 0px 580px">
+<b> Email Id : </b>
+<input type="text" size="20" value="">
+<br><br>
+<b> PassWord : </b>
+<input type="password" name="pass" id="txt">
+<input type="button" onclick="show()" value="show">
+<br><br>
+<input type="submit" name="submit" onclick="login()" size="20">
+<input type="reset" name="reset" size="20">
+</div>
+</form>
+</body>
+</html>
